@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Navigate } from "react-router-dom";
+
+// tutorial video that i used for help with my form => https://www.youtube.com/watch?v=TMRyFDeJZtY
+
+// signup form
+
+// this handles data being put into the form
 
 const NewUserForm = ( {users }) => {
 
@@ -12,6 +19,8 @@ const NewUserForm = ( {users }) => {
     })
 
     const [user, setUser] = useState('')
+
+    const navigate = useNavigate('')
 
     useEffect(() => {
         axios.get('http://localhost:3005/api/user').then(res => setUser(res.data))
@@ -41,11 +50,14 @@ const NewUserForm = ( {users }) => {
                 url: 'http://localhost:3005/api/user/create',
                 data: formData
             })
+            navigate('/userform')
         }
     }
 
+    // this creates the form
+
     return(
-        <div className="d-flex justify-content-center align-items-center bg-primary vh-100">
+        <div className="main d-flex justify-content-center align-items-center vh-100">
             <div className="bg-white p-3 rounded w-25">
                 <h2>Sign-Up</h2>
                 <form action="" onSubmit={handleSubmit}>

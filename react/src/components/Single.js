@@ -18,14 +18,14 @@ const Single =()=> {
     return(
         <main className='main' id='singleMain'>
             <div className='container'>
-                <div className='card'>
+                <div className='card' id='singleCard'>
                     <img src={`/images/${data.song_cover}`} alt={`${data.title}`} class="img-fluid image rounded" />   
                     <div className='card-body'>
-                        <h3 className='heading title'>{data.title}</h3>
-                        <p className='sub-text artist-name text-capitalize'>{data.band || data.alias || `${data.fName} ${data.lName}`}</p>
-                        <p className='sub-text album'>{data.album}</p>
-                        <p className='sub-text year-released'>{data.yr_released}</p>
-                        <p className='sub-text price'>${data.price}</p>
+                        <h3 className='heading title' id='singleHeading'>{data.title}</h3>
+                        <p className='sub-text artist-name text-capitalize' id='singleSubtext'>{data.band || data.alias || `${data.fName} ${data.lName}`}</p>
+                        <p className='sub-text album' id='singleSubtext'>{data.album}</p>
+                        <p className='sub-text year-released' id='singleSubtext'>{data.yr_released}</p>
+                        <p className='sub-text price' id='singleSubtext'>${data.price}</p>
                     </div>
                 </div>
             </div>

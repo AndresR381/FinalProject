@@ -8,18 +8,18 @@ const Header =()=> {
                 <div className="row">
                     <div className="col-md-5">
                         <h1 className="display-1 text-capitalize text-md-center">
-                            <Link to='/' className="text-decoration-none">
-                                myTunes
+                            <Link to='/' className="site-title text-decoration-none" id="siteTitle">
+                                miTunes
                             </Link>
                         </h1>
                     </div>
                     <div className="col-md-7">
                         <nav className="nav justify-content-around">
-                            <Link to='/home'>home</Link>
-                            <Link to='/artist'>artists</Link>
-                            <Link to='/band'>bands</Link>
-                            <Link to='/song'>songs</Link>
-                            <Link to='/userform'>log-in/sign-up</Link>
+                            <Link to='/home' className="nav-link text-capitalize">home</Link>
+                            <Link to='/artist' className="nav-link text-capitalize">artists</Link>
+                            <Link to='/band' className="nav-link text-capitalize">bands</Link>
+                            <Link to='/song' className="nav-link text-capitalize">songs</Link>
+                            <Link to='/userform' className="nav-link text-capitalize">log-in/sign-up</Link>
                         </nav>
                     </div>
                 </div>

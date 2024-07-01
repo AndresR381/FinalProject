@@ -1,7 +1,13 @@
-
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 import axios from "axios";
+
+// tutorial video that i used for help with my form => https://www.youtube.com/watch?v=TMRyFDeJZtY
+
+// login form
+
+// this handles data being put into the form
 
 const UserForm =( { users })=> {
 
@@ -11,6 +17,8 @@ const UserForm =( { users })=> {
     })
 
     const [user, setUser] = useState('')
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         axios.get('http://localhost:3005/api/user').then(res => setUser(res.data))
@@ -35,16 +43,16 @@ const UserForm =( { users })=> {
         if(regex.test(formData.password) === false ) {
             alert("Password is not valid.\nMust contian:\n&middot; one uppercase lestter\n&middot; one lowercase letter\n&middot; one number\n&middot; one special character &\n&middot; at least 8 characters")
         } else {
-            axios({
-                method: 'post',
-                url: 'http://localhost:3005/api/user/create',
-                data: formData
-            })
+            console.log(formData.password);
+            navigate('/home')
+            
         }
     }
 
+     // this creates the form
+
     return(
-        <div className="d-flex justify-content-center align-items-center bg-primary vh-100">
+        <div className="main d-flex justify-content-center align-items-center vh-100">
             <div className="bg-white p-3 rounded w-25">
                 <h2>Log-In</h2>
                 <form action="" onSubmit={handleSubmit}>

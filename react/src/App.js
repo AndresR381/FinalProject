@@ -6,7 +6,7 @@ import Footer from "./components/Footer"
 import ErrorPage from "./components/ErrorPage"
 
 import Home from './components/Home'
-import About from './components/About'
+// import About from './components/About'
 import Artists from './components/Artists'
 import Bands from './components/Bands'
 import Songs from './components/Songs'

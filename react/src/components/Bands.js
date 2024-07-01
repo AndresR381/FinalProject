@@ -27,7 +27,7 @@ const Bands =()=> {
     return (
         <main className="main" id="bandsMain">
             <div className="container">
-                <h2>bands</h2>
+                <h2 className="page-header text-capitalize">bands</h2>
                 <div className="row row-cols-1 row-cols-md-5 g-4">
                     {bandsCards}
                 </div>

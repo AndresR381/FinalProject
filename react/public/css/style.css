@@ -5,6 +5,73 @@ body {
     padding: 0;
 };
 
-.footer .span {
-    text-decoration: none;
+#siteTitle {
+    color: blue;
+}
+
+#header {
+    border: 3px solid black;
+    background-color: grey;
+    color: blue;
+}
+
+.main {
+    background-color: blue;
+}
+
+/* #cardImage {
+    height: 150px;
+    width: 200px;
+} */
+
+#cardBody {
+    height: 200px;
+    background-color: grey;
+}
+
+#card {
+    border: 3px solid black;
+}
+
+#footer {
+    border: 3px solid black;
+    background-color: gray;
+    padding-top: 20px;
+}
+
+#colophon {
+    margin-bottom: 20px;
+}
+
+#singleCard {
+    border: 3px solid black;
+    background-color: grey;
+}
+
+#bandsMain {
+    padding-bottom: 150px;
+}
+
+#singleHeading {
+    color: blue;
+}
+
+#singleSubtext {
+    color: blue;
+}
+
+.site-title {
+    color: blue;
+}
+
+.nav-link {
+    color: blue;
+}
+
+.link {
+    color: blue;
+}
+
+#homeMain {
+    padding-bottom: 100px;
 }

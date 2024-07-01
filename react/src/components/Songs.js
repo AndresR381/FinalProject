@@ -27,7 +27,7 @@ const Songs =()=> {
     return (
         <main className="main" id="songsMain">
             <div className="container">
-                <h2>songs</h2>
+                <h2 className="page-header text-capitalize">songs</h2>
                 <div className="row row-cols-1 row-cols-md-5 g-4">
                     {songsCards}
                 </div>
